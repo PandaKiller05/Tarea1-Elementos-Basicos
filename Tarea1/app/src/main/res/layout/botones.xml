@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mario_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PANEL DE CONTROL\n(Botones)"
+            android:textAlignment="center"
+            android:textColor="#C0392B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los botones ejecutan acciones inmediatas al presionarlos. 'Button' muestra texto, e 'ImageButton' muestra gráficos como los controles de una consola real."
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BOTÓN DE TEXTO (Button):"
+            android:textColor="#F1C40F"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSERT COIN / START"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C0392B"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BOTONES DE ACCIÓN (ImageButton):"
+            android:textColor="#C0392B"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btn_action_a"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:backgroundTint="#E74C3C"
+                android:layout_marginEnd="24dp"
+                android:contentDescription="Botón A" />
+
+            <ImageButton
+                android:id="@+id/btn_action_b"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:backgroundTint="#3498DB"
+                android:contentDescription="Botón B" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

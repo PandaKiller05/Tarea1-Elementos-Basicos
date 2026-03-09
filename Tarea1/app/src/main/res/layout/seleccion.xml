@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mario_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPCIONES DE JUEGO\n(Selección)"
+            android:textAlignment="center"
+            android:textColor="#C0392B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permiten elegir configuraciones. 'Switch' activa/desactiva una función, 'RadioButton' elige una sola opción de un grupo, y 'CheckBox' permite múltiples selecciones a la vez."
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GRÁFICOS (Switch):"
+            android:textColor="#E74C3C"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Switch
+            android:id="@+id/switch_crt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar Filtro Retro (CRT)"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIFICULTAD (RadioGroup):"
+            android:textColor="#C0392B"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_dificultad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/radio_facil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Novato"
+                android:textColor="#333333"/>
+
+            <RadioButton
+                android:id="@+id/radio_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:textColor="#333333"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_dificil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leyenda"
+                android:textColor="#333333"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROLES (CheckBox):"
+            android:textColor="#C0392B"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/check_invertir_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invertir Eje Y"
+            android:textColor="#333333"/>
+
+        <CheckBox
+            android:id="@+id/check_vibracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vibración del Mando"
+            android:textColor="#333333"
+            android:checked="true"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

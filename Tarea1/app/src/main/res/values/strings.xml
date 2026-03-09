@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tarea1</string>
+
+    <string-array name="equipo_lista">
+        <item>1. Mario - 999,999 pts</item>
+        <item>2. Luigi - 850,000 pts</item>
+        <item>3. Peach - 720,000 pts</item>
+        <item>4. Yoshi - 640,000 pts</item>
+        <item>5. Bowser - 500,000 pts</item>
+        <item>6. Toad - 350,000 pts</item>
+    </string-array>
+</resources>
